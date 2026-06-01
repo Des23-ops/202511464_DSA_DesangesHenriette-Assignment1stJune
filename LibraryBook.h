@@ -6,8 +6,8 @@
 
 using namespace std;
 
-class LibraryBook
-{
+class LibraryBook{
+
 private:
 
     int bookID;
@@ -15,7 +15,7 @@ private:
     string author;
     string borrowerName;
     int daysBorrowed;
-    bool borrowed;
+    string status;
 
 public:
 
@@ -31,7 +31,7 @@ public:
     void setAuthor(string author);
     void setBorrowerName(string borrowerName);
     void setDaysBorrowed(int daysBorrowed);
-    void setBorrowed(bool borrowed);
+    void setStatus(string status);
 
     // getters
     int getBookID();
@@ -39,7 +39,7 @@ public:
     string getAuthor();
     string getBorrowerName();
     int getDaysBorrowed();
-    bool getBorrowed();
+    string getStatus();
 
     void displayBook();
 };
